@@ -14,7 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Homework 5</title>
+    <title>Homework 6</title>
   </head>
   <body>
     <header class="header">
@@ -372,7 +372,7 @@
 
     <footer class="footer">
       <div class="container">
-        <div>
+        <div class="address-container">
           <a href="/" class="logo"><span class="accent">Web</span>Studio</a>
           <address class="address">
             <p class="item">г. Киев, пр-т Леси Украинки, 26</p>
@@ -415,12 +415,71 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-form-container">
+          <h2 class="title">подпишитесь на рассылку</h2>
+          <form class="subscribe-form">
+            <input class="email-input" type="email" placeholder="E-mail" />
+            <button type="submit" class="button subscribe-form-button">
+              Подписаться
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="close-button" data-modal-close></button>
+        <h2 class="title">Оставьте свои данные, мы вам перезвоним</h2>
+        <button class="close-button" data-modal-close>
+          <svg class="icon" width="18px" height="18px">
+            <use href="./images/icons.svg#close-button"></use>
+          </svg>
+        </button>
+        <form class="modal-form">
+          <label class="lable" for="name">Имя</label>
+          <div class="input-wrapper">
+            <input class="input" type="text" id="name" />
+            <svg class="icon" width="18px" height="18px">
+              <use href="./images/icons.svg#person"></use>
+            </svg>
+          </div>
+
+          <label class="lable" for="phone">Телефон</label>
+          <div class="input-wrapper">
+            <input class="input" type="text" id="phone" />
+            <svg class="icon" width="18px" height="18px">
+              <use href="./images/icons.svg#phone1"></use>
+            </svg>
+          </div>
+
+          <label class="lable" for="email">Почта</label>
+          <div class="input-wrapper">
+            <input class="input" type="text" id="email" />
+            <svg class="icon" width="18px" height="18px">
+              <use href="./images/icons.svg#email1"></use>
+            </svg>
+          </div>
+
+          <label class="lable" for="comment">Комментарий</label>
+          <textarea
+            class="input comment"
+            type="text"
+            id="comment"
+            rows="8"
+            placeholder="Введите текст"
+          ></textarea>
+
+          <div class="agreement-wrapper">
+            <label class="lable agreement" for="agreement"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="" class="link">Условия договора</a></label
+            >
+            <input class="checkbox" type="checkbox" id="agreement" />
+            <span class="new-checkbox"></span>
+          </div>
+
+          <button type="submit" class="button modal-button">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
