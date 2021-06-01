@@ -234,6 +234,8 @@ a {
 }
 
 .hero .button {
+  padding: 10px 32px;
+
   color: var(--main-background-color);
   background-color: var(--accent-color);
 
@@ -315,6 +317,8 @@ a {
 }
 
 .what-we-do-list .text {
+  font-size: 14px;
+
   color: var(--main-background-color);
   font-weight: 700;
   text-transform: uppercase;
