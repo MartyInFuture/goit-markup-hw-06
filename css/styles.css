@@ -856,7 +856,7 @@ a {
 }
 
 .agreement-wrapper .checkbox:checked + .new-checkbox {
-  border-color: var(--accent-color);
+  border: none;
   background-image: url('../images/icon-check.svg');
   background-origin: border-box;
 }
